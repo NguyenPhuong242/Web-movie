@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=UTF-8>
+    <title>Films : d´etails</title>
+</head>
+
+<body>
+    <h1> D´etails du film </h1>
+    Titre : {{title}}<br>
+    Ann´ee : {{year}}<br>
+    Nom des acteurs : {{actors}}<br>
+    R´esum´e de l'histoire : {{plot}}<br>
+    <img src="{{poster}}" width="300" alt="Affiche du film">
+    <form action="/delete-movie/{{id}}" method="GET">
+        <button type="submit">Delete Movie</button>
+    </form>
+
+    <form action="/edit-movie-form/{{id}}" method="get">
+        <button type="submit">Edit Movie</button>
+    </form>
+</body>
+
+</html>

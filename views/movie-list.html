@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste des movies</title>
+</head>
+<body>
+  <h1>Liste des movies</h1>
+  <form action="/add-movie-form" method="get">
+    <button type="submit">Add Movie</button>
+  </form>
+  {{#movies}}
+  <div>
+    <a href ='/movie-details/{{id}}'>{{title}}</a>
+  </div>
+  {{/movies}}
+</body>
+</html>
